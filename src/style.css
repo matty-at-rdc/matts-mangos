@@ -1,0 +1,38 @@
+/* I am not using Tailwind for the moment to practice my CSS skills  */
+/* Uncomment the following lines to enable Tailwind CSS */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+:root {
+    /*   color variables */
+    --clr-primary: #6aeeb5;
+    --clr-primary-hover: #29e6a7;
+    --clr-primary-dark: #039d69;
+    --clr-gray100: #f0f7f8;
+    --clr-gray200: #cfd8dc;
+    --clr-gray800: #353737;
+
+  
+    /*   border radius */
+    --radius: 0.2rem;
+  }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+
+
+.container {
+  margin: 0rem .25rem;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    margin: 0rem 3.75rem;
+  }
+}
+

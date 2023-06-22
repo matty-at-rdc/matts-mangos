@@ -1,0 +1,77 @@
+.home {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.home .poem {
+  margin-top: 1rem;
+  line-height: 2em;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.home .poem small {
+  font-size: .75rem;
+}
+
+.home .hero {
+  margin-top: 2.5rem;
+  min-height: 500px;
+  width: 100%;
+  background: #c8ac45;  /* fallback for old browsers */
+  background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url('https://images.unsplash.com/photo-1604256913753-eef2d1d8ca21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2342&q=80'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffe4c4;
+  border-radius: 10px;
+}
+
+.home .hero h2 {
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.home .invitation {
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 2em;
+  max-width: 75%;
+}
+
+.home .invitation .intro {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home .invitation a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--clr-primary);
+}
+
+.home .invitation .nonsense {
+  font-weight: 600;
+  font-style: italic;
+}
+
+
+@media screen and (min-width: 600px) {
+  .home {
+  }
+}
+
