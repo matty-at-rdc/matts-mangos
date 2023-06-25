@@ -1,0 +1,34 @@
+.about {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+.about h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.about .content {
+  margin-top: 1rem;
+  max-width: 800px;
+}
+
+.about .content p {
+  margin-top: 1rem;
+  line-height: 1.5em;
+}
+
+
+
+
+@media screen and (min-width: 825px) {
+  .about {
+
+  }
+
+
+}
+

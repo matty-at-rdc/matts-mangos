@@ -1,0 +1,82 @@
+.menu {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.menu h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.menu .grid {
+  margin-top: 2rem;
+  display: grid;
+  row-gap: 2rem;
+}
+
+.menu .grid .card {
+  /* width: 300px; */
+  /* border: 1px solid rgb(105, 105, 105); */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.menu .grid .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.menu .grid .card .graphic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center;
+  min-height: 100px;
+  background-color: rgb(49, 65, 84);
+  border-bottom: 1px solid rgb(105, 105, 105);
+  border-radius: 10px 10px 0px 0px; 
+}
+
+.menu .grid .card .content {
+  padding: 1.75rem;
+}
+
+.menu .grid .card .content .title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.menu .grid .card .content p {
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.menu .grid .card .content p span {
+  font-weight: 500;
+}
+
+
+@media screen and (min-width: 825px) {
+  .menu {
+
+  }
+
+  .menu .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+
+  .menu .grid .card .graphic {
+    font-size: 3.5rem;
+    min-height: 200px;
+
+  }
+}
+

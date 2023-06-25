@@ -61,7 +61,7 @@
 .home .invitation a {
   text-decoration: none;
   font-weight: 600;
-  color: var(--clr-primary);
+  color: var(--clr-gray800);
 }
 
 .home .invitation .nonsense {
