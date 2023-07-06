@@ -22,22 +22,41 @@
 }
 
 .about .location-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-top: 1rem;
   padding: .5rem;
 }
 
-.about .location-info .map {
-  max-width: 500px;
+.about .location-info .text {
+  padding: 0 1rem;
+}
+
+.about .location-info .text h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.about .location-info .text .location-key {
+  font-weight: 600;
 }
 
 
+.about .location-info .map {
+  margin-top: 1rem;
+  padding: 0 1rem;
+  max-width: 100%;
+}
 
 
-@media screen and (min-width: 825px) {
-  .about {
-
+@media screen and (width >= 825px) {
+  .about .location-info {
+    flex-direction: row;
   }
 
-
+  .about .location-info .map {
+    margin-top: 0;
+  }
 }
 

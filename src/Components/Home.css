@@ -1,5 +1,5 @@
 .home {
-  margin: 2rem 0rem;
+  margin: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@
   min-height: 500px;
   width: 100%;
   background: #c8ac45;  /* fallback for old browsers */
-  background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url('https://images.unsplash.com/photo-1604256913753-eef2d1d8ca21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2342&q=80'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(rgb(72 0 72 / 80%), rgb(192 72 72 / 80%)), url('https://images.unsplash.com/photo-1604256913753-eef2d1d8ca21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2342&q=80'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,7 +70,7 @@
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (width >= 600px) {
   .home {
   }
 }

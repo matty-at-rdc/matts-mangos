@@ -1,5 +1,7 @@
 /* I am not using Tailwind for the moment to practice my CSS skills  */
+
 /* Uncomment the following lines to enable Tailwind CSS */
+
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
@@ -20,19 +22,19 @@
   }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   background-color: white;
 }
 
 
 
 .container {
-  margin: 0rem .25rem;
+  margin: 0 .25rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (width >= 600px) {
   .container {
-    margin: 0rem 3.75rem;
+    margin: 0 3.75rem;
   }
 }
 

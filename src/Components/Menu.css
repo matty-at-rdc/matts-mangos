@@ -19,14 +19,15 @@
 
 .menu .grid .card {
   /* width: 300px; */
+
   /* border: 1px solid rgb(105, 105, 105); */
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   transition: 0.3s;
 }
 
 .menu .grid .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
 }
 
 .menu .grid .card .graphic {
@@ -37,9 +38,9 @@
   font-size: 2rem;
   text-align: center;
   min-height: 100px;
-  background-color: rgb(49, 65, 84);
-  border-bottom: 1px solid rgb(105, 105, 105);
-  border-radius: 10px 10px 0px 0px; 
+  background-color: rgb(49 65 84);
+  border-bottom: 1px solid rgb(105 105 105);
+  border-radius: 10px 10px 0 0; 
 }
 
 .menu .grid .card .content {
@@ -62,7 +63,7 @@
 }
 
 
-@media screen and (min-width: 825px) {
+@media screen and (width >= 825px) {
   .menu {
 
   }
