@@ -21,6 +21,15 @@
   line-height: 1.5em;
 }
 
+.about .location-info {
+  margin-top: 1rem;
+  padding: .5rem;
+}
+
+.about .location-info .map {
+  max-width: 500px;
+}
+
 
 
 
