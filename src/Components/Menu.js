@@ -1,12 +1,12 @@
 import React from 'react'
-import "./Menu.css"
+import './Menu.css'
 
 const colors = {
-  purple: "rgb(166, 93, 117)",
-  blue: "rgb(108 163 229)",
-  green: "rgb(126 229 108)",
-  red: "rgb(226 98 98)",
-  yellow: "rgb(255 231 127)",
+  purple: 'rgb(166, 93, 117)',
+  blue: 'rgb(108 163 229)',
+  green: 'rgb(126 229 108)',
+  red: 'rgb(226 98 98)',
+  yellow: 'rgb(255 231 127)'
 }
 
 const preparationStyles = [
@@ -112,7 +112,7 @@ const getSomeMangos = (n) => {
 }
 
 const clickHandler = (mango) => {
-  alert(`Hey this is a fake app and you can't really purchase the "${mango}" silly!`)
+  window.alert(`Hey this is a fake app and you can't really purchase the "${mango}" silly!`)
 }
 
 export default () => (
@@ -120,13 +120,15 @@ export default () => (
     <h1>Menu</h1>
     <div className='grid'>
       {getSomeMangos(15).map((mango, i) => {
-        return <div className='card' key={`${mango}-${i}`}>
-          <div className='graphic' style={{backgroundColor: getRandomColor()}}>😋 ➕ 🥭</div>
-          <div className='content'>
-            <h2 className='title' onClick={() => {clickHandler(mango)}} >{mango}</h2>
-            <p>This is absolutely the most wonderful <span>{mango}</span> ever made!</p>
+        return (
+          <div className='card' key={`${mango}-${i}`}>
+            <div className='graphic' style={{ backgroundColor: getRandomColor() }}>😋 ➕ 🥭</div>
+            <div className='content'>
+              <h2 className='title' onClick={() => { clickHandler(mango) }}>{mango}</h2>
+              <p>This is absolutely the most wonderful <span>{mango}</span> ever made!</p>
+            </div>
           </div>
-        </div>
+        )
       })}
     </div>
   </div>

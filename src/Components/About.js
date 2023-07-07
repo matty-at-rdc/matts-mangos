@@ -1,9 +1,8 @@
 import React from 'react'
 
-import "./About.css"
+import './About.css'
 
-import img from '../images/map.png';
-
+import img from '../images/map.png'
 
 export default () => (
   <div className='about'>
@@ -37,7 +36,7 @@ export default () => (
           <p>If that information didn't make it hard enough check out this picture of a non-existent city with no marker for our location whatsoever!</p>
         </div>
 
-        <div className='map'><img className='map' src={img}/></div>
+        <div className='map'><img className='map' src={img} /></div>
       </div>
 
     </div>

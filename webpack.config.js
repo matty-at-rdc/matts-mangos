@@ -1,4 +1,4 @@
-const path = require("path")
+const path = require('path')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
@@ -18,8 +18,8 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif)$/i,
         include: path.resolve(__dirname, 'src'),
-        type: 'asset/resource',
-      },
+        type: 'asset/resource'
+      }
     ]
   },
   plugins: [
@@ -31,6 +31,6 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     hot: true,
-    compress: true,
+    compress: true
   }
 }

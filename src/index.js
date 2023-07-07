@@ -9,11 +9,12 @@ import {
 import './reset.css'
 import './style.css'
 
-
 import Navbar from './Components/Navbar'
 import Home from './Components/Home'
 import About from './Components/About'
 import Menu from './Components/Menu'
+import Create from './Components/Create'
+
 
 const App = () => {
   return (
@@ -30,6 +31,9 @@ const App = () => {
           </Route>
           <Route path='/about'>
             <About />
+          </Route>
+          <Route path='/create'>
+            <Create />
           </Route>
         </Switch>
 
