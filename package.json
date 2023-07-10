@@ -6,7 +6,9 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack serve --mode development ",
-    "fmt": "standard --fix"
+    "script-fmt": "standard --fix",
+    "style-fmt": "stylelint --fix **/*.css",
+    "fmt": "yarn script-fmt && yarn style-fmt"
   },
   "dependencies": {
     "final-form": "^4.20.9",

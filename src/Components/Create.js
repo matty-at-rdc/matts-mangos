@@ -18,7 +18,7 @@ const MyForm = () => (
     render={({ handleSubmit }) => (
       <form onSubmit={handleSubmit}>
         <div>
-        <label>Creator</label>
+          <label>Creator</label>
           <Field name='creator' component='input' placeholder='Matt The Mango Man' />
         </div>
 
@@ -49,7 +49,7 @@ const MyForm = () => (
           render={({ input, meta }) => (
             <div>
               <label>MSRP</label>
-              <input {...input} type='number' placeholder='999.00'/>
+              <input {...input} type='number' placeholder='999.00' />
               {meta.touched && meta.error && <span>{meta.error}</span>}
             </div>
           )}
@@ -60,7 +60,7 @@ const MyForm = () => (
           render={({ input, meta }) => (
             <div>
               <label>Frequent Mango Bonus Point</label>
-              <input {...input} type='number' placeholder='482'/>
+              <input {...input} type='number' placeholder='482' />
               {meta.touched && meta.error && <span>{meta.error}</span>}
             </div>
           )}
